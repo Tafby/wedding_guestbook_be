@@ -1,5 +1,5 @@
 class ImageSerializer < ActiveModel::Serializer
-  attributes :id, :caption, :likes, :user_id, :created_at
+  attributes :id, :img_url,:caption, :likes, :created_at
 
 
   has_many :comments

@@ -5,6 +5,35 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/13.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/57.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/62.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/69.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/30.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/24.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/54.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/0.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/38.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/53.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/74.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/85.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/35.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/40.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/6.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/8.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/40.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/72.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/92.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/37.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/21.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/77.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/55.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/men/90.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/49.jpg")
+User.create(name: Faker::FunnyName.two_word_name, email: Faker::Internet.email, avatar: "https://randomuser.me/api/portraits/women/14.jpg")
+
 
 
 
@@ -36,3 +65,4 @@ Image.create(img_url: 'http://writingexercises.co.uk/images2/randomimage/toadsto
 Image.create(img_url: 'http://writingexercises.co.uk/images2/randomimage/sandy-boots.jpg', caption: "First beach trip", likes: 3, user_id: User.sample, created_at: Faker::Date.between(5.days.ago, Date.today))
 Image.create(img_url: 'http://writingexercises.co.uk/images2/randomimage/restaurant-view.jpg', caption: "A trip we took", likes: 1, user_id: User.sample, created_at: Faker::Date.between(5.days.ago, Date.today))
 Image.create(img_url: 'http://writingexercises.co.uk/images2/randomimage/fortress.jpg', caption: "So many memories!", likes: 20, user_id: User.sample, created_at: Faker::Date.between(5.days.ago, Date.today))
+

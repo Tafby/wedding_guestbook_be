@@ -11,7 +11,7 @@ class Api::V1::ImagesController < ApplicationController
   end
 
    def create
-    @image = image.create(image_params)
+    @image = Image.create(image_params)
     if @image.save 
       render json: @image, status: :accepted
     else 
@@ -30,6 +30,6 @@ class Api::V1::ImagesController < ApplicationController
   private 
 
   def image_params 
-    params.permit(:img_url, :caption, :likes, :created_at)
+    params.permit(:img_url, :caption, :likes, :created_at, :user_id)
   end
 end

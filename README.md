@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+GuestBook
 
-Things you may want to cover:
+This application serves as a way for your guests to leave photo memories for any occasion. Your users have the ability to upload an image from the internet, write a caption, leave a comment, like photos, as well as set a countdown date to your event.
 
-* Ruby version
+Prerequisites
+*Rails
 
-* System dependencies
+Installing
+Once you have cloned and forked this repo, you'll need to run bundle install, rails db:create, rails db:migrate, and finally rails db:seed. This should give you some starting seed data. 
 
-* Configuration
 
-* Database creation
+Built with
+*Vanilla JS
+*CSS
+*HTML
+*Rails
+*Ruby
 
-* Database initialization
+Acknowledgements:
+http://flipclockjs.com/
+Thanks to flipclock for the cool countdown timer.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
